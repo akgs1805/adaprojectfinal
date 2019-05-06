@@ -9,6 +9,7 @@ int main()
 {
         int G[MAX][MAX],i,j,n,u;
         char *village[200];      
+        FILE *fp;
         printf("\n\t\t*************************************\n");
         printf("\t\t  Welcome to Surya Narayana Agencies\n");
         printf("\t\t*************************************\n");
@@ -36,6 +37,8 @@ int main()
         printf("\n***************************************\n");
         printf("Enter the starting village index:");
  dijkstra(G,n,u,village);
+            fp = fopen("output.html","x");
+            //directly open up into output.html 
         return 0;
 }
  
